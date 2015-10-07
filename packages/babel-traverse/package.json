@@ -9,11 +9,12 @@
   "main": "lib/index.js",
   "dependencies": {
     "babel-code-frame": "^5.8.22",
-    "globals": "^8.3.0",
-    "lodash": "^3.10.1",
-    "repeating": "^1.1.3",
-    "babel-types": "^5.8.22",
     "babel-messages": "^5.8.22",
-    "babylon": "^5.8.22"
+    "babel-types": "^5.8.22",
+    "babylon": "^5.8.22",
+    "globals": "^8.3.0",
+    "invariant": "^2.1.1",
+    "lodash": "^3.10.1",
+    "repeating": "^1.1.3"
   }
 }
