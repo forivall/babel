@@ -48,7 +48,7 @@ packages.forEach(function (root) {
 
   cd("packages/" + root.folder);
   exec("npm install");
-  exec("npm link");
+  // exec("npm link");
   cd("../..");
 });
 
