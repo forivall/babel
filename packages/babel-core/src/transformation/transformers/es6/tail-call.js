@@ -21,7 +21,7 @@ function returnBlock(expr) {
   return t.blockStatement([t.returnStatement(expr)]);
 }
 
-let visitor = {
+let transformerVisitor = {
   enter(node, parent) {
     if (t.isTryStatement(parent)) {
       if (node === parent.block) {
@@ -137,7 +137,7 @@ class TailCallTransformer {
     if (!ownerId) return;
 
     // traverse the function and look for tail recursion
-    this.path.traverse(visitor, this);
+    this.path.traverse(transformerVisitor, this);
 
     // has no tail call recursion
     if (!this.hasTailRecursion) return;

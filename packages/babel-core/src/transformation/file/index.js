@@ -33,6 +33,7 @@ let errorVisitor = {
 
 export default class File extends Store {
   constructor(opts = {}, pipeline) {
+    super();
     this.pipeline = pipeline;
 
     this.log  = new Logger(this, opts.filename || "unknown");
