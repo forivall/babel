@@ -8,9 +8,10 @@
   "repository": "babel/babel",
   "main": "lib/index.js",
   "dependencies": {
+    "babel-traverse": "^5.8.22",
     "esutils": "^2.0.2",
+    "invariant": "^2.1.1",
     "lodash": "^3.10.1",
-    "to-fast-properties": "^1.0.1",
-    "babel-traverse": "^5.8.22"
+    "to-fast-properties": "^1.0.1"
   }
 }
