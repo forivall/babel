@@ -135,7 +135,7 @@ pp.parseMaybeAssign = function (noIn, refShorthandDefaultPos, afterLeftParse) {
   } else if (failOnShorthandAssign && refShorthandDefaultPos.start) {
     this.unexpected(refShorthandDefaultPos.start);
   }
-  
+
   return left;
 };
 
@@ -533,9 +533,9 @@ pp.parseParenAndDistinguishExpression = function (startPos, startLoc, canBeArrow
     }
 
     if (this.match(tt.ellipsis)) {
-      let spreadNodeStartPos = this.state.start, spreadNodeStartLoc = this.state.startLoc;
       spreadStart = this.state.start;
-      exprList.push(this.parseParenItem(this.parseRest(), spreadNodeStartLoc, spreadNodeStartPos));
+      let spreadStartLoc = this.state.startLoc;
+      exprList.push(this.parseParenItem(this.parseRest(), spreadStartLoc, spreadStart));
       break;
     } else {
       exprList.push(this.parseMaybeAssign(false, refShorthandDefaultPos, this.parseParenItem));
