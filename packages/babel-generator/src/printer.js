@@ -38,7 +38,7 @@ export default class Printer extends Buffer {
     let needsParens = n.needsParens(node, parent);
     if (needsParens) this.push("(");
 
-    this.printLeadingComments(node, parent);
+    this.printLeadingComments(node);
 
     this.catchUp(node);
 
@@ -53,7 +53,7 @@ export default class Printer extends Buffer {
     // Check again if any of our children may have left an aux comment on the stack
     if (node.loc) this.printAuxAfterComment();
 
-    this.printTrailingComments(node, parent);
+    this.printTrailingComments(node);
 
     if (needsParens) this.push(")");
 
@@ -164,12 +164,12 @@ export default class Printer extends Buffer {
     return val;
   }
 
-  printTrailingComments(node, parent) {
-    this.printComments(this.getComments("trailingComments", node, parent));
+  printTrailingComments(node) {
+    this.printComments(this.getComments("trailingComments", node));
   }
 
-  printLeadingComments(node, parent) {
-    this.printComments(this.getComments("leadingComments", node, parent));
+  printLeadingComments(node) {
+    this.printComments(this.getComments("leadingComments", node));
   }
 
   printInnerComments(node, indent = true) {
