@@ -1,5 +1,7 @@
 /* @flow */
 
+// various functions to parse options
+
 import slash from "slash";
 import * as util from "../../../util";
 

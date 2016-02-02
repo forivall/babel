@@ -317,6 +317,8 @@ export default class File extends Store {
     return uid;
   }
 
+  // Reduces file size by deduping strings used in template literals
+
   addTemplateObject(
     helperName: string,
     strings: Array<Object>,
