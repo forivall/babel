@@ -1,4 +1,4 @@
-import pull from "lodash/array/pull";
+import pull from "lodash/pull";
 
 export default function ({ types: t }) {
   function isProtoKey(node) {

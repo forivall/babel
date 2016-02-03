@@ -2,7 +2,7 @@
 
 import whitespace from "./whitespace";
 import * as parens from "./parentheses";
-import each from "lodash/collection/each";
+import each from "lodash/each";
 import * as t from "babel-types";
 
 function find(obj, node, parent, printStack) {

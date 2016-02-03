@@ -9,6 +9,6 @@
     "babel-runtime": "^5.0.0",
     "babel-types": "^6.3.13",
     "esutils": "^2.0.0",
-    "lodash": "^3.10.0"
+    "lodash": "^4.2.0"
   }
 }

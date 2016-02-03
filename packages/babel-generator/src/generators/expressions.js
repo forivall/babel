@@ -1,7 +1,7 @@
 /* @flow */
 
 import isInteger from "is-integer";
-import isNumber from "lodash/lang/isNumber";
+import isNumber from "lodash/isNumber";
 import * as t from "babel-types";
 import n from "../node";
 

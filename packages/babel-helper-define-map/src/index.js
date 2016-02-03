@@ -1,6 +1,6 @@
 import nameFunction from "babel-helper-function-name";
-import each from "lodash/collection/each";
-import has from "lodash/object/has";
+import each from "lodash/each";
+import has from "lodash/has";
 import * as t from "babel-types";
 
 function toKind(node: Object) {
